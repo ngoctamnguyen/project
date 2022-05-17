@@ -1,5 +1,4 @@
 body {
-    background-color: brown;
     background: url(./images/MFLE-image.jpg);
 }
 
@@ -18,10 +17,12 @@ body {
     align-items: center;
     justify-content: space-between;
     border-radius: 10%;
-    padding-left: 5%;
+    padding-left: 0%;
     padding-right: 5%;
+    margin-top: 0%;
 
 }
+
 .main-nav-loggedIn {
     display: flex;
     background-color: transparent;
@@ -32,7 +33,7 @@ body {
     align-items: center;
     justify-content: space-between;
     border-radius: 10%;
-    padding-left: 5%;
+    padding-left: 0%;
     padding-right: 5%;
 
 }
@@ -40,13 +41,11 @@ body {
 .inside-nav {
     display: inline-flex;
     flex-direction: row;
-    flex: 0 1 200px;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 5px;
     font-weight: normal;
     font-size: small;
-
 }
 
 .btn {
@@ -56,9 +55,107 @@ body {
     text-align: center;
     border-radius: 20px;
     width: 100px;
-    height: 40px;
+    height: 35px;
 }
-/* 
-.main-nav-loggedIn {
-    display: none;
-} */
+
+table {
+    background-color: cadetblue;
+    margin-left: 5%;
+}
+
+.tableLists {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+tr:hover {
+    color: blue;
+}
+
+#errormessage {
+    margin-bottom: 0%;
+    padding-left: 0%;
+    color: red;
+}
+
+.header {
+    height: 100px;
+    padding: 5px 5px;
+    background: #555;
+    color: #f1f1f1;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(99, 99, 97);
+    color: white;
+    text-align: center;
+}
+
+audio {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 1%;
+}
+
+.playButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player {
+    display: flex;
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 50px;
+}
+
+.seek_slider {
+    width: 90%;
+}
+
+.slider_container {
+    width: 75%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+}
